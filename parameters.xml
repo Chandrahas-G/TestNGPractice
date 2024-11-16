@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<parameter name="URL" value="ABC.com"/>
+	<test thread-count="5" name="PL">
+		<parameter name="APIKey" value="123456"></parameter>
+		<classes>
+			<class name="BasicTests.Parameters1"/>
+			<class name="BasicTests.Parameters2"/>
+		</classes>
+	</test>
+	<test thread-count="5" name="PL2">
+		<parameter name="APIKey" value="789456"></parameter>
+		<classes>
+			<class name="BasicTests.Parameters2"/>
+		</classes>
+	</test>
+</suite>
